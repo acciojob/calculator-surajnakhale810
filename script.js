@@ -3,12 +3,12 @@ let input = document.getElementById("input")
 let expression = '';
 function solve(e){
 // console.log(e)
-if(e === 'clear'){
+if(e == 'clear'){
     expression = "";
     // console.log(expression)
     input.value = expression
 }
-else if(e === 'ans'){
+else if(e == 'ans'){
     let result = eval(expression)
     input.value = result
 }
